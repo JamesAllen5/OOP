@@ -18,6 +18,8 @@ def main():
     for count in range(10):
         my_coin.toss()
 
+        my_coin.__sideup = "Heads"  # doesn't work, hidden attribute
+
         # Display the side of the coin that is facing up.
         print("This side is up:", my_coin.get_sideup())
 
