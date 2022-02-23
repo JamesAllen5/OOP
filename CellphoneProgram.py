@@ -1,4 +1,4 @@
-import Exercise2Class as e2
+import CellphoneClass as cc
 
 
 def main():
@@ -7,25 +7,22 @@ def main():
     mod = "iPhone X"
     retail = 300
 
-    phone = e2.CellPhone(man, mod, retail)
+    phone = cc.CellPhone(man, mod, retail)
 
-    print()
-
-    print("The manufacturer of the phone is: ", phone.get__manufact())
-
-    print("The retail number of the phone is: ", phone.get__model())
-
-    print("The retail price of the phone is: ", phone.get__retail_price)
+    print("Here is the datat that you entered:")
+    print("Manufacturer:", phone.get_manufact())
+    print("Model number:", phone.get_model())
+    print("Retail price:", phone.get_retail_price())
 
     phone.set__manufact()
     phone.set__model()
     phone.set__retail_price()
 
     print("The manufacturer of the phone is now: ", phone.get__manufact())
-
     print("The retail number of the phone is now: ", phone.get__model())
-
     print("The retail price of the phone is now: ", phone.get__retail_price)
+
+    print(phone)
 
 
 main()
